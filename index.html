@@ -397,6 +397,47 @@
     </div>
   </footer>
 
+  <!-- ========== CHATBOT ========== -->
+  <div class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat assistant">
+    <span class="chatbot-toggle-icon" id="chatbot-toggle-icon">💬</span>
+    <span class="chatbot-toggle-pulse"></span>
+    <span class="chatbot-toggle-badge" id="chatbot-badge">1</span>
+  </div>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-header">
+      <div class="chatbot-header-left">
+        <div class="chatbot-avatar">🤖</div>
+        <div>
+          <div class="chatbot-header-title">GravityBot</div>
+          <div class="chatbot-header-status">
+            <span class="chatbot-status-dot"></span>
+            Online
+          </div>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">✕</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will be injected here -->
+    </div>
+
+    <div class="chatbot-suggestions" id="chatbot-suggestions">
+      <button class="chatbot-chip" data-query="What diet plans do you offer?">Diet Plans</button>
+      <button class="chatbot-chip" data-query="How does Anti-Gravity therapy work?">Anti-Gravity Therapy</button>
+      <button class="chatbot-chip" data-query="What is my ideal BMI?">BMI Help</button>
+      <button class="chatbot-chip" data-query="How can I book a consultation?">Book Consultation</button>
+    </div>
+
+    <form class="chatbot-input-area" id="chatbot-form">
+      <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Ask me about diet, BMI, plans..." autocomplete="off">
+      <button type="submit" class="chatbot-send" id="chatbot-send" aria-label="Send message">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+      </button>
+    </form>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
